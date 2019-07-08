@@ -1,0 +1,11 @@
+1、set -e
+
+"Exit immediately if a simple command exits with a non-zero status."
+
+在“set -e”之后出现的代码，一旦出现返回值非零，整个脚本就会立即退出。
+
+2、set -o pipefail
+
+"If set, the return value of a pipeline is the value of the last (rightmost) command to exit with a  non-zero  status,or zero if all commands in the pipeline exit successfully.  This option is disabled by default."
+
+在这个设置执行后，其后面的代码，包括管道命令的返回值，为最后一个非零的命令的返回值，或者当管道内的所有命令都执行成功后返回零。
