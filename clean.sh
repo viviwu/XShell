@@ -1,13 +1,11 @@
-#!/usr/bin/env bash 
+#!/bin/bash
 
-# set -euxo pipefail          #set -eux   set -o pipefail
+echo "Cleanning Wordkspace...."
 
-rm -r -f /Users/viviwu/Library/Developer/Xcode/DerivedData
-#   rm -r -f /Users/viviwu/Library/Developer/Xcode/Archives
+rm -rf .idea
+rm -rf .vs
+rm *.log
+# rm *cache*
 
-#launchWithSystemBoot
-rm -r -f /Users/viviwu/Library/LaunchAgents
 
-#GoogleUpdateDeamon
-rm -r -f /Users/viviwu/Library/Google
-
+echo "All Done!"
