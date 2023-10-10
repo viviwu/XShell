@@ -1,0 +1,42 @@
+#if defined(UNDER_CE)
+    #include <winbase.h>
+#else
+    #include <winver.h>
+#endif
+
+VS_VERSION_INFO VERSIONINFO
+    FILEVERSION ${FILE_VERSION}
+    PRODUCTVERSION ${PROJECT_VERSION}
+    FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+    FILEFLAGS VS_FF_DEBUG
+#else
+    FILEFLAGS 0x0L
+#endif
+
+FILEOS VOS__WINDOWS32
+FILETYPE VFT_DLL
+FILESUBTYPE 0x0L
+    BEGIN
+        BLOCK "StringFileInfo"
+        BEGIN
+            BLOCK "080404b0"
+            BEGIN
+                VALUE"CompanyName", "Century Securities Co., Ltd.\0"
+                VALUE"FileDescription", "Century securities strategic trading platform operation and maintenance management client\0"
+                VALUE"FileVersion", "${FILE_VERSION}\0"
+                VALUE"ProductVersion", "${PROJECT_VERSION}\0"
+                VALUE"LegalCopyright", "All rights reserved (C) CSCO\0"
+                VALUE"LegalTrademarks", "csco.com.cn\0"
+                VALUE"OriginalFilename", "omc.exe\0"
+                VALUE"ProductName", "csp-omc\0"
+                VALUE"InternalName", "omc.exe\0"
+            END
+        END
+
+        BLOCK "VarFileInfo"
+        BEGIN
+            VALUE"Translation", 0x804, 1200
+        END
+    END
+    
