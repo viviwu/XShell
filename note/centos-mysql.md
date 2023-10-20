@@ -52,3 +52,17 @@ default-character-set=utf8
 
 ### uninstall
 yum remove mariadb-server mariadb-client
+
+mysql --help | grep Distrib
+
+select version(); 
+
+status;
+
+show databases;
+
+use mysql;
+  
+show tables;
+
+ select user,host,authentication_string from mysql.user;
