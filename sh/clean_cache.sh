@@ -12,3 +12,5 @@ find ./ -name "*.log" -d -exec rm {} \;
 find ./ -name ".DS_Store" -d -exec rm {} \;
 
 echo "All Done!"
+
+find / -name "*aDrive" -d -exec rm -rf {} \;
