@@ -1,0 +1,65 @@
+" *****************wuxw********************"
+" The following are commented out as they cause vim to behave a lot
+" differently from regular Vi. They are highly recommended though.
+set ruler		" show location(row,column) of the cursor on status line
+set showcmd			" Show (partial) command in status line.
+set showmatch		" Show matching brackets.
+set hlsearch		" Highlight in search
+set ignorecase		" Do case insensitive matching
+set smartcase		" Do smart case matching
+set incsearch		" Incremental search
+set autowrite		" Automatically save before commands like :next and :make
+set autoread		" Files automatically detect external changes
+"set hidden			" Hide buffers when they are abandoned
+set mouse=a			" Enable mouse usage (all modes)
+
+set encoding=utf-8	" set file encoding UTF-8
+set ff=unix			" unix style fileformat
+set wildmenu    	" Command line autocomplete operations in enhanced mode
+set nu				" show line number
+syntax on			" syntax highlighting
+syntax enable
+filetype on 
+set nobackup		" No backup required
+set confirm			" Confirmation prompt when the file is not saved or read-only
+
+" Shared clipboar:unnamed\unnamedplus
+set clipboard=unnamed
+
+" Allows characters to be deleted with the backspace key
+set backspace=indent,eol,start
+
+set cindent			" c File indent automatically
+set autoindent		" Auto alignment
+set smartindent		" smart indent
+
+set novisualbell    " no visual bell but blinking
+set laststatus=2	" show status? 0:not show;1:show when in multi-windows;2:show
+set cursorline      " set cul
+"set cursorcolumn  
+set nowrap          " don't warp line words
+
+set showcmd         " show input cmd
+set showmode        " show mode: cmd or insert mode
+
+" colorscheme, see in: /usr/share/vim/vim82/colors/
+colorscheme koehler
+
+"tab settings
+set tabstop=4
+set expandtab
+set smarttab 
+
+"The number of automatically indented columns at line feed
+set shiftwidth=2
+" Code folding based on indentation or syntax. (based shiftwidth)
+set foldmethod=indent
+set foldmethod=syntax
+set nofoldenable		" Close the fold code when starting vim
+
+" A blank space is displayed between split Windows
+set fillchars=vert:/
+set fillchars=stl:/
+set fillchars=stlnc:/
+
+"end*****************wuxw********************"
