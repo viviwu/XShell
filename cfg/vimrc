@@ -76,11 +76,9 @@ set fillchars=vert:/
 set fillchars=stl:/
 set fillchars=stlnc:/
 
-" 配色方案
-set background=dark
-"   colorscheme solarized
-"   colorscheme molokai
-"   colorscheme phd
+"set background=dark
+" 配色方案 /usr/share/vim/vim**/colors
+colorscheme koehler 
 
 " 禁止显示菜单和工具条
 set guioptions-=m
